@@ -22,10 +22,23 @@ Now you should write this function. Add a comment above it describing the purpos
 Hint:
 Why does the function return the address of the resulting concatenated string? Because the concatenated string consumes more memory, a new memory allocation is needed, thus string x is relocated in the memory. The original string x is released (that's why x must be allocated dynamically - we need to be able to free it), and the new location is returned.
 
-
 */
 
+char *copystring(char const *str) { //you've done this in task1, you can copy here that as well!
+    int length = strlen(str);
+    char *newstr;
+    newstr = (char*) malloc((length + 1) * sizeof(char));
+    if (newstr == NULL)
+        return NULL;    /* :( */
+    strcpy(newstr, str);
+    return newstr;
+}
 
+___ stringcat(___,____){
+
+
+}
+  
 #include <stdio.h>
 
 int main(){
