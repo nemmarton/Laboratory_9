@@ -9,7 +9,7 @@ The function should return with the address of a dynamically allocated string co
 
 #include <stdio.h>
 #include <string.h>
-
+#include <stdlib.h>
 /*
  * Creates a new string from "orig" consisting of characters
  * between positions start and end. The caller is responsible
