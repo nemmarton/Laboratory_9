@@ -29,6 +29,11 @@ Why does the function return the address of the resulting concatenated string? B
 #include <stdio.h>
 
 int main(){
+char *x;
+x = copystring("apple");  /* from the previous task */
+x = stringcat(x, "tree");
+printf("%s\n", x);    // appletree
 
+free(x);
 return 0;
 }
