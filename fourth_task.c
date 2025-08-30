@@ -11,6 +11,8 @@ Write a C program to demonstrate the usage of the function. Don't forget to rele
 
 
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
 int main(){
 
