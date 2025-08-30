@@ -1,4 +1,4 @@
-/* Task description:
+/* Task description:Substrings of strings
 Please visit the homepage for more detail and visuals
 Write a function that receives a string and copies only a part of it, specified by a starting and an ending index! (The received string must be intact.) 
 The start index is the position of the first character to keep and the end index is the position of the first character that it not to keep. (Hence, the interval is closed from the left and open from the right).
