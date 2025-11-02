@@ -1,17 +1,28 @@
 /* Task description:
 Dynamic extension of strings
 
-The strcat() function located in string.h header file concatenates two strings: the strcat(x, y) call adds string y to the end of string x. 
-For the correct operation, the array behind x must be long enough to accomodate the letters of y, too, otherwise the function overindexes the array usually leading to a crash. 
-It is the responsibility of the caller to ensure that the array behind x is big enough, which makes the use of this function rather inconvinient.
+The strcat() function located in string.h header file concatenates
+ two strings: the strcat(x, y) call adds string y to the end of string x. 
+For the correct operation, the array behind x must be long enough
+ to accomodate the letters of y, too, otherwise the function 
+ overindexes the array usually leading to a crash. 
+It is the responsibility of the caller to ensure that the array 
+behind x is big enough, which makes the use of this function 
+rather inconvinient.
 
-Your task is to create a more sophisticated function to concatenate two strings. The first parameter must be a dynamic string! 
-This function should be used like x = stringcat(x, y), hence it does not add the letters y to x, but it creates a new array of appropriate size dynamically, 
-assembles the concatenated string there, releases the dynamic memory of the received x and returns the pointer pointing to the new string. 
+Your task is to create a more sophisticated function 
+to concatenate two strings. The first parameter must 
+be a dynamic string! 
+This function should be used like x = stringcat(x, y), 
+hence it does not add the letters y to x, but it creates 
+a new array of appropriate size dynamically, 
+assembles the concatenated string there, releases the 
+dynamic memory of the received x and returns the pointer 
+pointing to the new string. 
 For instance:
 
 char *x;
-x = copystring("apple");  /* from the previous task */
+x = copystring("apple");  // from the previous task 
 x = stringcat(x, "tree");
 printf("%s\n", x);    // appletree
 
