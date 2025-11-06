@@ -30,7 +30,7 @@ int main()
 {
   char string[101] = "This is a text not containing anything rude or harsh"; // this is an array on the stack, mutable!
   char *substr = substring(string, 5, 10);
-  printf("%s", substring);
+  printf("%s", substr;
   // Deallocate!!
 
   return 0;
