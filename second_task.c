@@ -64,9 +64,10 @@ int main()
 {
     char *x;
     x = copystring("apple"); /* from the previous task */
-    x = stringcat(x, "tree");
-    printf("%s\n", x); // appletree
+    char* y = stringcat(x, "tree");
+    printf("%s\n", y); // appletree
 
     free(x);
+    free(y);
     return 0;
 }
